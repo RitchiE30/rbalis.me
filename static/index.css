@@ -1,0 +1,140 @@
+CSS:
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #240046;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    color: #ffffff;
+    font-size: 1.45rem;
+    padding: 30px 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .name h1 {
+    margin: 0;
+}
+
+nav .name p {
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 150px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 75px;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e0033;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+nav .name .blob {
+    position: absolute;
+    top : -60px;
+    left: -20px;
+    z-index: -1;
+}
+
+nav ul li .blob {
+    display: none;
+    position : absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    z-index: -1;
+    margin: -10px;
+}
+
+nav ul li.active .blob {
+    display: block;
+}
+
+nav ul li {
+    position: relative;
+}
+
+main.contact .item .icon svg {
+    height: 118px;
+    fill: #E0AAFF;
+}
+
+main.contact a.item  {
+    text-decoration: none;
+    color:#E0AAFF;
+    text-align: center;
+    width: 45%;
+    margin-bottom: 200px;
+    font-size: 1.5rem;
+}
+
+main.contact {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+main.portfolio table {
+    border-collapse: collapse;
+    --border-color: #ffffff;
+}
+
+main.portfolio .topleft{
+    border-right: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+main.portfolio .topright{
+    border-right: 2px solid var(--border-color);
+}
+
+main.portfolio .bottomleft{
+    border-right: 2px solid var(--border-color);
+    border-top: 2px solid var(--border-color);
+}
+
+main.portfolio .middle {
+    border-bottom: 2px solid var(--border-color);
+}
+main.portfolio .bottomright {
+    border-bottom: 2px solid var(--border-color);
+}
